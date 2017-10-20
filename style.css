@@ -74,3 +74,8 @@ a {
   margin: 5px;
   border: 10px solid #ccc;
 }
+
+.ugly {
+  color: orange;
+  border: 3px dashed purple;
+}
