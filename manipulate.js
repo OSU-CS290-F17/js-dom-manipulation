@@ -30,6 +30,11 @@ var newPhotoCard = createPhotoCard("http://placekitten.com/320/320/", "A cute ki
 var photoCardContainer = document.getElementById('photo-card-container');
 
 photoCardContainer.appendChild(newPhotoCard);
+// photoCardContainer.insertBefore(newPhotoCard, photoCardContainer.firstChild);
+// photoCardContainer.replaceChild(newPhotoCard, photoCardContainer.firstChild);
+
+newPhotoCard.setAttribute('id', 'newly-added-photo-card');
+console.log(newPhotoCard.getAttribute('data-price'));
 
 
 var userSpecifiedContent = "<img src=x onerror=\"alert('Uh oh!')\">";
@@ -57,3 +62,6 @@ newDiv.appendChild(newSpan);
 photoCardContainer.appendChild(newDiv);
 
 newSpan.textContent = "Hi";
+
+// newDiv.remove();
+newDiv.parentNode.removeChild(newDiv);
